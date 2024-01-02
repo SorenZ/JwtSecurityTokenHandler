@@ -1,0 +1,2 @@
+# JwtSecurityTokenHandler
+Thread Safe JwtSecurityTokenHandler
