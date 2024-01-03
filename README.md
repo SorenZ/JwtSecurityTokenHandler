@@ -3,6 +3,24 @@
 This document provides an in-depth analysis of the thread safety for two critical methods in the `JwtSecurityTokenHandler` class: `WriteToken` and `ReadJwtToken`. 
 We present benchmark results and a detailed explanation of tests to demonstrate their behavior under concurrent usage.
 
+## The code we are talking about:
+```csharp
+using System.IdentityModel.Tokens.Jwt;
+
+namespace SafeTokenHandler;
+
+public static class JwtSecurityTokenHandlerExtensions
+{
+    private static readonly JwtSecurityTokenHandler JwtSecurityTokenHandlerShared = new();
+    
+    public static string CompileToString(this JwtSecurityToken token) =>
+      JwtSecurityTokenHandlerShared.WriteToken(token);
+
+    public static JwtSecurityToken ToJwtSecurityToken(this string token) =>
+      JwtSecurityTokenHandlerShared.ReadJwtToken(token);
+}
+```
+
 ## Benchmark Results
 ### WriteToken
 ```
