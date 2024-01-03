@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafeTokenHandler", "src\SafeTokenHandler.csproj", "{260C8A23-EAC1-42D7-88EB-63B7AABE1BC8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{62BF50E6-71A8-479F-B668-EF6FD81DA25E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JwtSecurityTokenHandler.Test", "test\JwtSecurityTokenHandler.Test\JwtSecurityTokenHandler.Test.csproj", "{E75A6FB3-1D6C-4C3F-82DE-1BFA6DC8BB9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{260C8A23-EAC1-42D7-88EB-63B7AABE1BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{260C8A23-EAC1-42D7-88EB-63B7AABE1BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{260C8A23-EAC1-42D7-88EB-63B7AABE1BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{260C8A23-EAC1-42D7-88EB-63B7AABE1BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75A6FB3-1D6C-4C3F-82DE-1BFA6DC8BB9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75A6FB3-1D6C-4C3F-82DE-1BFA6DC8BB9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75A6FB3-1D6C-4C3F-82DE-1BFA6DC8BB9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75A6FB3-1D6C-4C3F-82DE-1BFA6DC8BB9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E75A6FB3-1D6C-4C3F-82DE-1BFA6DC8BB9D} = {62BF50E6-71A8-479F-B668-EF6FD81DA25E}
+	EndGlobalSection
+EndGlobal
