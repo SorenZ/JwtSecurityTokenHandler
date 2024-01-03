@@ -5,3 +5,4 @@ using SafeTokenHandler;
 
 Console.WriteLine("Hi, Mom!");
 BenchmarkRunner.Run<ToJwtSecurityTokenBenchmark>();
+BenchmarkRunner.Run<CompileToStringBenchmark>();
